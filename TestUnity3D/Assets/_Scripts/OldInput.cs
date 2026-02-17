@@ -11,13 +11,13 @@ public class OldInput : MonoBehaviour
     // Se llama cada frame
     void Update()
     {
-       // Se llaman los métodos para que funcionen
+       // Se llaman los mï¿½todos para que funcionen
 
         GetInputFloat();
         GetInputButton();
     }
 
-    // Método para visibilizar el vector 2
+    // Mï¿½todo para visibilizar el vector 2
     public void GetInputFloat()
     {
         // Se almacena el eje raw (-1, 0- 1) del eje horizontal (ver en Unity "Axis"), en la variable.
@@ -32,7 +32,7 @@ public class OldInput : MonoBehaviour
 
     }
 
-    // Método para visibilizar la presión de botón
+    // Mï¿½todo para visibilizar la presiï¿½n de botï¿½n
     public void GetInputButton()
     {
         // Si el sistema detecta que se presiona la letra "M"

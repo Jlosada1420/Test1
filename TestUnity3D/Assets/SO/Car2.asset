@@ -10,12 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a2d22bbd7434c3b4e91fb636b6c2b3e7, type: 3}
-  m_Name: Car1
+  m_Name: Car2
   m_EditorClassIdentifier: 
-  speed: 800
-  brake: 500
-  angle: 15
-  carName: Chunky
-  carImage: {fileID: 21300000, guid: 336f7539ad2071e40b03f5a8be82aff2, type: 3}
-  carPrefab: {fileID: 859366599933337886, guid: a595643a49cca7049b346db18b98db38,
+  speed: 1000
+  brake: 200
+  angle: 10
+  carName: Lil' Boy
+  carImage: {fileID: 21300000, guid: f9edefbac6f57254d8cdf9d1ba4cb77b, type: 3}
+  carPrefab: {fileID: 4712776654223993980, guid: a4c79343b43a9c04392454db20afa847,
     type: 3}

@@ -8,13 +8,25 @@ public class OldInput : MonoBehaviour
 
     [HideInInspector] public float vertical;
 
+    public GameObject light1;
+    public GameObject light2;
+
+    private bool areLightsOn;
+
     // Se llama cada frame
+    
+    void Start()
+    {
+        areLightsOn = false;
+    }
+
     void Update()
     {
        // Se llaman los m�todos para que funcionen
 
         GetInputFloat();
         GetInputButton();
+        CarLights();
     }
 
     // M�todo para visibilizar el vector 2
@@ -32,6 +44,17 @@ public class OldInput : MonoBehaviour
 
     }
 
+    public void CarLights()
+    {
+        if(Input.GetKeyDown(KeyCode.Z))
+        {
+            areLightsOn = !areLightsOn;
+            
+            light1.SetActive(areLightsOn);
+            light2.SetActive(areLightsOn);
+        }
+    }
+
     // M�todo para visibilizar la presi�n de bot�n
     public void GetInputButton()
     {
@@ -41,6 +64,7 @@ public class OldInput : MonoBehaviour
             // Se escribe en consola el textor "Shoot"
             Debug.Log("Shoot");
         }
+        
     }
 
 }
